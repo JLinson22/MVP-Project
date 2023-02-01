@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+.left {
+    float: left;
+    text-align: center;
+    width: 600px;
+    margin-top: 10rem;
+    margin-left: 7rem;
+}
+
+.right {
+    float: right;
+    margin-top: 4rem;
+    margin-right: 3rem;
+}
+
+.footer {
+    clear: both;
+}
+
+.footer-item {
+    float: left;
+    background: white;
+    width: 20%;
+    height: 50px;
+    margin-top: 7rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: rgb(89, 191, 251)
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text-bold {
+    font-weight: 500;
+}
+
+.text-muted {
+    color: rgb(165, 165, 165)
+}
+
+nav {
+    width: 100%;
+    background: rgb(255, 255, 255);
+    padding: 0.7rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+nav .link-items {
+    display: flex;
+}
+
+a {
+    color: rgb(0, 0, 0);
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav #search-bar {
+    background: rgb(214, 214, 214);
+    border-radius: 1rem;
+    padding: 0.6rem 1rem;
+    margin-left: 3rem;
+}
+
+nav #search-bar input[type="search"] {
+    background: transparent;
+    width: 20vw;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: rgb(48, 48, 48);
+}
+
+.nav-item {
+    margin-left: 2rem;
+}
+
+main .title {
+    font-size: 100px;
+}
+
+main .mission {
+    font-size: 50px;
+}
+
+.user-container {
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.userDiv {
+    margin: auto;
+    margin-top: 5rem;
+    background-color: white;
+    width: 500px;
+    padding: 1.5rem;
+    border-radius: 6px;
+
+}
+
+.discover {
+    margin-top: 10rem;
+    text-align: center;
+    font-size: 60px;
+    display: none;
+}
+
+.timeline {
+    margin-top: 10rem;
+    text-align: center;
+    font-size: 60px;
+    display: none;
+}
+
+.postDiv {
+    text-align: center;
+    margin-top: 5 rem;
+}
+
+.h3 {
+    margin-top: 5rem;
+}
+
+.sign-up {
+    margin-top: 20rem;
+    width: 360px;
+    height: 470px;
+    margin: auto;
+    background-color: white;
+    border-radius: 3px;
+    display: none;
+}
+
+.sign-up-header {
+    margin-top: 10rem;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.sign-up-form {
+    width: 300px;
+    margin-left: 20px;
+}
+
+form label {
+    display: flex;
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.sign-up-input {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+
+#submit {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+#discoverpage {
+    margin-top: 5rem;
+}
+
+.discoverBtn {
+    background-color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.timelineBtn {
+    background-color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.signupBtn {
+    background-color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.create-post {
+    width: 360px;
+    height: 470px;
+    margin: auto;
+    border-radius: 3px;
+}
+
+.post-header {
+    margin-top: 5rem;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.post-form {
+    width: 300px;
+    margin-left: 20px;
+}
+
+#post-box {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+
+#name-box {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+
+.postBtn {
+    cursor: pointer;
+}
+
+#editBtn {
+    margin-right: 2rem;
+    font-size: 20px;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 6px;
+    background-color: rgb(184, 184, 184);
+}
+
+#deleteBtn {
+    margin-left: 2rem;
+    font-size: 20px;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 6px;
+    background-color: rgb(184, 184, 184);
+}
+
+.update-info {
+    margin-top: 20rem;
+    width: 360px;
+    height: 470px;
+    margin: auto;
+    background-color: white;
+    border-radius: 6px;
+    text-align: center;
+    display: none;
+}
+
+.update-input {
+    margin-top: 2rem;
+    width: 80%;
+    padding: 7px;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+
+.update-header {
+    margin-top: 10rem;
+    text-align: center;
+    padding-top: 15px;
+}

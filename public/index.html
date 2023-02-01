@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Shout</title>
+    <link rel="stylesheet" href="./main.css"></link>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script defer src="app.js"></script>
+
+</head>
+<body>
+    <nav class="header">
+        <div class="container">
+            <h2 class="brand">
+                Social Shout
+            </h2>
+            <div id="search-bar">
+                <i class="uil uil-search"></i>
+                <input class="search-input" type="search" placeholder="search for people">
+            </div>
+            <div class="links">
+                <ul class="link-items">
+                    <li class="nav-item" id="home">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item" id="discover">
+                        <button class="discoverBtn" onclick="discoverPage()">Discover</button>
+                    </li>
+                    <li class="nav-item" id="timeline">
+                        <button class="timelineBtn" onclick="timelinePage()">Timeline</button>
+                    </li>
+                    <li class="nav-item" id="profile">
+                        <a href="profile.html" class="nav-link">My Profile</a>
+                    </li>
+                    <li class="nav-item" id="sign-up">
+                        <button class="signupBtn" onclick="signUpPage()">Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main id="homepage">
+        <div class="left">
+            <h1 class="title">Social Shout</h1>
+            <p class="mission">Giving people the power to build community and bring the world closer together</p>
+        </div>
+        <div class="right">
+            <img src="./images/shout-logo.png" alt="social shout logo">
+        </div>
+    </main>
+        <div class="footer">
+            <div class="links">
+                <ul class="link-items">
+                    <li class="footer-item" id="home">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="footer-item" id="discover">
+                        <button class="discoverBtn" onclick="discoverPage()">Discover</button>
+                    </li>
+                    <li class="footer-item" id="timeline">
+                        <button class="timelineBtn" onclick="timelinePage()">Timeline</button>
+                    </li>
+                    <li class="footer-item" id="profile">
+                        <a href="profile.html" class="nav-link">My Profile</a>
+                    </li>
+                    <li class="footer-item" id="sign-up">
+                        <button class="signupBtn" onclick="signUpPage()">Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <div class="discover">People you may know</div>
+    <div class="timeline">Timeline
+        <div class="create-post">
+            <h3 class="post-header">Create a Post</h2>
+            <form class="post-form">
+                <input id="name-box" type="text" placeholder="your name">
+                <input id="post-box" type="text" placeholder="write something">
+                <input class="postBtn" id="post-box" type="button" value="post">
+            </form>
+        </div>
+    </div>
+    <div class="sign-up">
+        <h1 class="sign-up-header">Sign Up</h1>
+        <form class="sign-up-form">
+            <label>Name</label>
+            <input class="sign-up-input" id="name" type="text">
+            <label>Age</label>
+            <input class="sign-up-input" id="age" type="number">
+            <label>Gender</label>
+            <input class="sign-up-input" id="gender" type="text">
+            <label>Location</label>
+            <input class="sign-up-input" id="location" type="text">
+            <input class="sign-up-input" id="updateBtn" type="button" value="Submit">
+        </form>
+    </div>
+    <div class="update-info">
+        <h1 class="update-header">Update Information</h1>
+        <form class="update-form">
+            <input class="update-input" id="update-name" type="text" placeholder="name">
+            <input class="update-input" id="update-age" type="text" placeholder="age">
+            <input class="update-input" id="update-gender" type="text" placeholder="gender">
+            <input class="update-input" id="update-location" type="text" placeholder="location">
+            <input class="update-input" id="updateBtn" type="button" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
+
