@@ -136,17 +136,20 @@ const postData = (data) => {
         let objects = data[i]
         let name = objects.name
         let content = objects.content
-        let date = objects.date_posted
+        let date = objects.formatted_date
         let postDiv = document.createElement('div')
         let userNameDiv = document.createElement('h3')
         let contentDiv = document.createElement('p')
+        let dateDiv = document.createElement('p')
         userNameDiv.className = 'h3'
         userNameDiv.textContent = name
-        contentDiv.textContent = (content + date)
-        postDiv.className = 'userDiv'
+        contentDiv.textContent = content
+        dateDiv.textContent = date
+        postDiv.className = 'postDiv'
         container.append(postDiv)
         postDiv.append(userNameDiv)
         postDiv.append(contentDiv)
+        postDiv.append(dateDiv)
     }
 }
 
@@ -159,9 +162,9 @@ const userPost = () => {
     let postDiv = document.createElement('div')
     let userNameDiv = document.createElement('h3')
     let contentDiv = document.createElement('p')
-    container.className = 'user-container'
+    container.className = 'post-container'
     userNameDiv.className = 'h3'
-    postDiv.className = 'userDiv'
+    postDiv.className = 'postDiv'
     userNameDiv.textContent = postName.value
     contentDiv.textContent = content.value
     document.body.appendChild(container)
@@ -174,7 +177,6 @@ const userPost = () => {
 post.addEventListener('click', (e) => {
     e.preventDefault()
     userPost()
-    console.log('working');
 })
 
 // CREATE USER
@@ -234,10 +236,6 @@ updateBtn.addEventListener('click', (e) => {
     updateData()
 })
 
-// UPDATE POST
-
-
-
 // DELETE USER
 
 const deleteMethod = async (data) => {
@@ -253,5 +251,3 @@ const deleteMethod = async (data) => {
         }
     }
 }
-
-// DELETE POST

@@ -15,7 +15,7 @@ CREATE TABLE posts (
     post_id serial,
     user_id integer,
     content text,
-    date_posted timestamp
+    date_posted date
 );
 
 INSERT INTO users (name, age, gender, location) VALUES ('John Smith', 26, 'male', 'Austin, Texas');
@@ -34,18 +34,18 @@ INSERT INTO users (name, age, gender, location) VALUES ('Jeffrey Sanchez', 29, '
 INSERT INTO users (name, age, gender, location) VALUES ('Sherry White', 68, 'female', 'Columbus, Ohio');
 INSERT INTO users (name, age, gender, location) VALUES ('Mark Davis', 25, 'male', 'Charlotte, North Carolina');
 
-INSERT INTO posts (user_id, content, date_posted) VALUES (1, 'Just made my first sale!', Now());
-INSERT INTO posts (user_id, content, date_posted) VALUES (2, 'So glad to be here today!', '2023-01-22 10:06');
-INSERT INTO posts (user_id, content, date_posted) VALUES (4, 'Faith in oneself is the best and safest course.', '2023-01-28 13:14');
-INSERT INTO posts (user_id, content, date_posted) VALUES (5, 'After the first blush of sin comes its indifference.', '2023-01-12 16:05');
-INSERT INTO posts (user_id, content, date_posted) VALUES (6, 'Were going to be OK because of the American people. They have more grit, determination and courage than you can imagine.', '2023-01-30 12:45');
-INSERT INTO posts (user_id, content, date_posted) VALUES (7, 'The glory of gardening: hands in the dirt, head in the sun, heart with nature. To nurture a garden is to feed not just on the body, but the soul.', '2022-12-26 18:56');
-INSERT INTO posts (user_id, content, date_posted) VALUES (8, 'I dont just try to be funny.', '2023-01-28 13:14');
-INSERT INTO posts (user_id, content, date_posted) VALUES (9, 'I dont have the feeling of being motivated by anger, revenge or frustration.', '2023-01-05 06:23');
-INSERT INTO posts (user_id, content, date_posted) VALUES (10, 'History repeats itself, first as tragedy, second as farce.', '2022-12-15 21:37');
-INSERT INTO posts (user_id, content, date_posted) VALUES (11, 'If parents would only realize how they bore their children!', '2023-01-02 10:23');
-INSERT INTO posts (user_id, content, date_posted) VALUES (12, 'Death comes to all, but great achievements build a monument which shall endure until the sun grows cold.', '2023-01-28 12:01');
-INSERT INTO posts (user_id, content, date_posted) VALUES (13, 'The liberty of the individual is a necessary postulate of human progress.', '2023-01-12 09:17');
-INSERT INTO posts (user_id, content, date_posted) VALUES (14, 'I will either be famous or infamous.', '2022-11-26 16:37');
-INSERT INTO posts (user_id, content, date_posted) VALUES (15, 'Next in importance to freedom and justice is popular education, without which neither freedom nor justice can be permanently maintained.', '2023-01-26 11:17');
-INSERT INTO posts (user_id, content, date_posted) VALUES (16, 'There is a brief moment when all there is in a mans mind and soul and spirit is reflected through his eyes, his hands, his attitude. This is the moment to record.', '2022-11-05 15:49');
+INSERT INTO posts (user_id, content, date_posted) VALUES (1, 'Just made my first sale!', '2023-01-20');
+INSERT INTO posts (user_id, content, date_posted) VALUES (2, 'So glad to be here today!', '2023-01-22');
+INSERT INTO posts (user_id, content, date_posted) VALUES (4, 'Faith in oneself is the best and safest course.', '2023-01-28');
+INSERT INTO posts (user_id, content, date_posted) VALUES (5, 'After the first blush of sin comes its indifference.', '2023-01-12');
+INSERT INTO posts (user_id, content, date_posted) VALUES (6, 'Were going to be OK because of the American people. They have more grit, determination and courage than you can imagine.', '2023-01-30');
+INSERT INTO posts (user_id, content, date_posted) VALUES (7, 'The glory of gardening: hands in the dirt, head in the sun, heart with nature. To nurture a garden is to feed not just on the body, but the soul.', '2022-12-26');
+INSERT INTO posts (user_id, content, date_posted) VALUES (8, 'I dont just try to be funny.', '2023-01-28');
+INSERT INTO posts (user_id, content, date_posted) VALUES (9, 'I dont have the feeling of being motivated by anger, revenge or frustration.', '2023-01-05');
+INSERT INTO posts (user_id, content, date_posted) VALUES (10, 'History repeats itself, first as tragedy, second as farce.', '2022-12-15');
+INSERT INTO posts (user_id, content, date_posted) VALUES (11, 'If parents would only realize how they bore their children!', '2023-01-02');
+INSERT INTO posts (user_id, content, date_posted) VALUES (12, 'Death comes to all, but great achievements build a monument which shall endure until the sun grows cold.', '2023-01-28');
+INSERT INTO posts (user_id, content, date_posted) VALUES (13, 'The liberty of the individual is a necessary postulate of human progress.', '2023-01-12');
+INSERT INTO posts (user_id, content, date_posted) VALUES (14, 'I will either be famous or infamous.', '2022-11-26');
+INSERT INTO posts (user_id, content, date_posted) VALUES (15, 'Next in importance to freedom and justice is popular education, without which neither freedom nor justice can be permanently maintained.', '2023-01-26');
+INSERT INTO posts (user_id, content, date_posted) VALUES (16, 'There is a brief moment when all there is in a mans mind and soul and spirit is reflected through his eyes, his hands, his attitude. This is the moment to record.', '2022-11-05');

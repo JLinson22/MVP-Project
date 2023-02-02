@@ -97,7 +97,7 @@ nav #search-bar input[type="search"] {
 }
 
 .nav-item {
-    margin-left: 2rem;
+    margin-left: 3rem;
 }
 
 main .title {
@@ -119,6 +119,15 @@ main .mission {
     background-color: white;
     width: 500px;
     padding: 1.5rem;
+    border-radius: 6px;
+
+}
+
+.postDiv {
+    margin: auto;
+    margin-top: 5rem;
+    background-color: white;
+    width: 500px;
     border-radius: 6px;
 
 }
@@ -177,7 +186,6 @@ form label {
 .sign-up-input {
     width: 100%;
     padding: 7px;
-    margin-top: 2rem;
     border: 1px solid gray;
     border-radius: 6px;
 }
@@ -253,6 +261,7 @@ form label {
     margin-top: 1rem;
     border-radius: 6px;
     background-color: rgb(184, 184, 184);
+    cursor: pointer;
 }
 
 #deleteBtn {
@@ -262,6 +271,11 @@ form label {
     margin-top: 1rem;
     border-radius: 6px;
     background-color: rgb(184, 184, 184);
+    cursor: pointer;
+}
+
+#updateBtn {
+    cursor: pointer;
 }
 
 .update-info {

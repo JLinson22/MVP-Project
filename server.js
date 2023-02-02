@@ -31,7 +31,7 @@ app.get('/posts', async (req, res) => {
 
 app.get('/userposts', async (req, res) => {
     try {
-        const userPosts = await sql`SELECT * FROM users INNER JOIN posts ON users.user_id = posts.user_id`
+        const userPosts = await sql`SELECT name, content, date_posted, TO_CHAR(date_posted, 'DD, Month, YYYY') AS formatted_date FROM users INNER JOIN posts ON users.user_id = posts.user_id`
             res.json(userPosts)
     } catch (error) {
         res.json(error)
